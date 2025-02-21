@@ -1,0 +1,38 @@
+.navbar {
+  background-color: transparent !important; 
+  border-bottom: none !important; 
+  padding: 0.5rem 1rem;
+}
+
+.navbar-toggler {
+  border-color: #eeba30; 
+  margin-left: auto; 
+}
+
+.offcanvas {
+  background-color: #1c1c1c; 
+}
+
+.offcanvas-header {
+  border-bottom: 1px solid #740001; 
+}
+
+.offcanvas-title {
+  color: #eeba30; 
+  font-family: 'Harry Potter', cursive; 
+}
+
+.nav-link {
+  color: #d3a625 !important; 
+  font-family: 'Cinzel', serif; 
+  font-size: 18px;
+  transition: color 0.3s ease; 
+}
+
+.nav-link:hover {
+  color: #740001 !important; 
+}
+
+.btn-close-white {
+  filter: invert(1); 
+}

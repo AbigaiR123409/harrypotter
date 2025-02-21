@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Cinzel', serif;
+}
+
+.spells-flex {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 30px; 
+    padding: 0;
+    list-style: none; 
+}
+
+.spell-item {
+    background-color: #2c3e50; 
+    border: 1px solid #740001; 
+    border-radius: 8px; 
+    padding: 20px;
+    color: #eeba30; 
+    flex: 0 1 calc(30% - 40px); 
+    max-width: calc(30% - 40px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    text-align: center; 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    position: relative;
+    overflow: hidden; 
+}
+
+.spell-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 1;
+}
+
+.spell-item h5,
+.spell-item p {
+    position: relative;
+    z-index: 2; 
+}
+
+.spell-item h5 {
+    margin: 0 0 10px 0; 
+    font-family: 'Harry Potter', cursive;
+    font-size: 20px;
+}
+
+.spell-item p {
+    margin: 0; 
+    color: #d3a625;
+    font-family: 'Cinzel', serif; 
+    font-size: 16px;
+}
+
+
+.spell-item:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+}

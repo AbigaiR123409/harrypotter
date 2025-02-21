@@ -1,0 +1,13 @@
+<div class="card-container">
+    @for(books of data; track books.id){
+        <div class="card">
+            <div class="card-body">
+                <h3 class="card-title">{{ books.libro }}</h3>
+                <h4 class="card-subtitle">{{ books.titulo_original }}</h4>
+                <p class="card-text"><strong>Fecha de lanzamiento:</strong> {{ books.fecha_de_lanzamiento }}</p>
+                <p class="card-text"><strong>Autora:</strong> {{ books.autora }}</p>
+                <p class="card-description">{{ books.descripcion }}</p>
+            </div>
+        </div>
+    }
+</div>

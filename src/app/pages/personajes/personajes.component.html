@@ -1,0 +1,25 @@
+<div class="card-container">
+    @for(personaje of data; track personaje.id){
+        <div class="card">
+            <div class="image-container">
+                <img [src]="personaje.imagen" alt="{{ personaje.personaje }}" class="card-image">
+            </div>
+
+            <div class="card-body">
+                <h3 class="card-title">{{ personaje.personaje }}</h3>
+                <h4 class="card-subtitle">{{ personaje.apodo }}</h4>
+                <p class="card-text"><strong>Casa de Hogwarts:</strong> {{ personaje.casaDeHogwarts }}</p>
+                <p class="card-text"><strong>Interpretado por:</strong> {{ personaje.interpretado_por }}</p>
+
+                <div class="hijos-container">
+                    <h5>Hijos:</h5>
+                    <ul>
+                        @for(hijo of personaje.hijos; track hijo){
+                            <li>{{ hijo }}</li>
+                        }
+                    </ul>
+                </div>
+            </div>
+        </div>
+    }
+</div>

@@ -1,0 +1,8 @@
+<ul class="spells-flex">
+    @for(spells of data; track spells.id){
+        <li class="spell-item">
+            <h5>{{ spells.hechizo }}</h5>
+            <p>{{ spells.uso }}</p>
+        </li>
+    }
+</ul>

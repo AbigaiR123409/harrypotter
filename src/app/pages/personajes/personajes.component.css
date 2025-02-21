@@ -1,0 +1,93 @@
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    margin-top: 40px; 
+}
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(74, 111, 165, 0.7); 
+    color: #fff;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.image-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.card-image {
+    width: 80%;
+    height: auto; 
+    max-height: 200px; 
+    object-fit: contain; 
+    border-radius: 8px; 
+}
+
+.card-body {
+    padding: 15px;
+    width: 100%;
+    text-align: center; 
+}
+
+.card-title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #eeba30; 
+}
+
+.card-subtitle {
+    font-size: 1.2em;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 1em;
+    color: #fff; 
+    margin-bottom: 10px;
+    text-align: justify; 
+    text-align-last: center; 
+    padding: 0 15px;
+}
+
+.hijos-container {
+    margin-top: 10px;
+    text-align: center; 
+}
+
+.hijos-container h5 {
+    font-size: 1.1em;
+    margin-bottom: 5px;
+    color: #eeba30;
+}
+
+.hijos-container ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center; 
+}
+
+.hijos-container li {
+    font-size: 0.9em;
+    color: #fff;
+    margin-bottom: 5px;
+    text-align: justify; 
+    text-align-last: center; 
+}
